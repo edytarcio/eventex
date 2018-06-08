@@ -1,0 +1,201 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href={% static 'css/theme.css' %} type="text/css"> </head>
+
+<body class="">
+  <nav class="navbar navbar-expand-md bg-secondary navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Eventex Piauí</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#conferencia">CONFERÊNCIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#palestrantes">PALESTRANTES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#inscricoes">INSCRIÇÃO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#patrocinador">PATROCINADORES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#local">LOCAL</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5 text-center h-75 w-100" style="background-image: url({% static 'img/teresina03.jpg' %});background-size:cover;">
+  <!--div class="py-5 text-center h-75 w-100" style="background-image: url('img/teresina03.jpg');background-size:cover;"-->
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-primary display-1">Eventex Piauí</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center" id="conferencia">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="mb-4 text-primary display-4">A CONFERÊNCIA</h1>
+          <p class="lead mb-5">O Eventex Piauí é o maior encontro da região nordeste para a comunidade de desenvolvimento. Ocorre anualmente na cidade de Teresina. Em um contexto dedicado a troca de experiências e conhecimento, o evento é voltado para desenvolvedores e entusiastas
+            de diversas áreas ou backgrounds, sem distinção de grau de conhecimento ou stack.&nbsp;</p>
+          <a href="#" class="btn btn-lg btn-primary mx-1">Quero participar!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 text-center bg-light" id="palestrantes">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="mb-4 text-primary display-4">Palestrantes Confirmados</h1>
+          <p class="lead">Crescemos juntos com a comunidade</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 p-4">
+          <img class="img-fluid d-block rounded-circle mx-auto" src={% static 'img/henrique.jpg' %}>
+          <p class="my-4">Henrique Bastos é apaixonado por desenvolvimento de software, especialista na criação de sistemas com Python, Django e Métodos Ágeis, membro da Django Software Foundation, da Python Software Foundation e diretor da Associação Python Brasil.</p>
+          <p>Henrique Bastos</p>
+        </div>
+        <div class="col-md-3 p-4">
+          <img class="img-fluid d-block rounded-circle mx-auto" src={% static 'img/alex.martelli.jpg' %}>>
+          <p class="my-4">Alex Martelli is an Italian computer engineer and Fellow of the Python Software Foundation. Since early 2005, he works for Google</p>
+          <p>Alex Martelli</p>
+        </div>
+        <div class="col-md-3 p-4">
+          <img class="img-fluid d-block rounded-circle mx-auto" src={% static 'img/20170714_091715.jpg' %}>
+          <p class="my-4">Edytarcio Pereira é analista de sistemas na empresa Claudino SA e entuasista de novas tecnologias. Atualmente está realizando o curso Welcome to the Django do Henrique Bastos e pretende compartilhar sua experiência nesta palestra&nbsp;</p>
+          <p>Edytarcio
+            <br> </p>
+        </div>
+        <div class="col-md-3 p-4">
+          <img class="img-fluid d-block rounded-circle mx-auto" src={% static 'img/barbara03.jpg' %}>
+          <p class="my-4">Barbara Liskov is an American computer scientist who is an Institute Professor at the Massachusetts Institute of Technology and Ford Professor of Engineering in its School of Engineering's electrical engineering and computer science department</p>
+          <p>Barbara Liskov</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 text-center" id="inscricoes">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-3 mb-4 text-primary">Inscrições em breve</h1>
+          <p class="lead mb-5">Fique à vontade para entrar em contato com a gente. Teremos prazer em responder quaisquer dúvidas.</p>
+          <a href="#" class="btn btn-lg btn-primary mx-1">eventex@armazemparaiba.com.br</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-4 bg-light">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-12">
+            <form>
+              <h1 class="mb-4 text-primary display-4">Seja um Palestrante</h1>
+              <div class="form-group">
+                <label for="InputName">Seu nome</label>
+                <input type="text" class="form-control" id="InputName" placeholder="Informe seu nome"> </div>
+              <div class="form-group">
+                <label for="InputEmail1">Email</label>
+                <input type="email" class="form-control" id="InputEmail1" placeholder="Informe e-mail"> </div>
+            </form>
+            <a href="#" class="btn btn-lg btn-primary mx-1">Inspire outros!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center" id="patrocinador">
+    <div class="container py-5" id="Patrocinadores">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="mb-4 text-primary display-4">Patrocinadores</h1>
+          <h1 class="">GOLD</h1>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-12">
+              <img src={% static 'img/armazem.jpg' %} class="img-fluid justify-content-center">
+              <img src={% static 'img/sponsor-gold-02.png' %} class="img-fluid justify-content-center">
+              <img src={% static 'img/sponsor-gold-03.png' %}  class="img-fluid justify-content-center">
+              <img src={% static 'img/sponsor-gold-01.png' %}  class="img-fluid justify-content-center"> </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row"></div>
+          <h1 class="">SILVER</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-12">
+              <img src={% static 'img/sponsor-silver-01.png' %} class="img-fluid justify-content-center">
+              <img src={% static 'img/sponsor-silver-02.png' %} class="img-fluid justify-content-center">
+              <img src={% static 'img/sponsor-silver-03.png' %} class="img-fluid justify-content-center">
+              <img src={% static 'img/sponsor-silver-04.png' %} class="img-fluid justify-content-center">
+              <img src={% static 'img/sponsor-silver-05.png' %} class="img-fluid justify-content-center">
+              <img src={% static 'img/sponsor-silver-06.png' %} class="img-fluid justify-content-center"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-light" id="local">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="mb-4 text-primary display-4">Local do Evento:
+            <br>Teresina Shopping</h1>
+          <p class="lead mb-5">Endereço: Av. Raul Lopes, 1000 - Noivos, Teresina - PI, 64046-902&nbsp;
+            <br>Fone: (86) 3230-2000
+            <br>E-mail: teresinashopping.com.br &nbsp;</p>
+        </div>
+        <div class="col-md-6">
+          <img class="d-block img-fluid" src={% static 'img/shopping02.png' %} </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <div class="container py-5" id="Patrocinadores">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-9">
+              <img src={% static 'img/ti.png' %} class="img-fluid justify-content-center"> </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead">Eventex Piauí @ 2018 | Teresina - PI, Brasil</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo-->
+</body>
+
+</html>
